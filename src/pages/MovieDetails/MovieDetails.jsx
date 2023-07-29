@@ -24,7 +24,7 @@ const MovieDetails = () => {
   // console.log(location);
 
   useEffect(() => {
-    fetchMovie.getMovieById(id).then(setMovieId);
+    fetchMovieApi.getMovieById(id).then(setMovieId);
   }, [id]);
 
   if (!movieId) {
@@ -49,7 +49,7 @@ const MovieDetails = () => {
       </GoBackLinkWrapper>
       <WrapperMovie>
         <MoviePic
-          src={`${fetchMovie.BASE_URL}${poster_path}`}
+          src={`${fetchMovieApi.BASE_URL}${poster_path}`}
           alt={original_title}
           width="300"
         />

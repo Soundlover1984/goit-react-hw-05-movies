@@ -10,7 +10,7 @@ export class MovieApiService {
 constructor() {
     this.BASE_URL = 'https://image.tmdb.org/t/p/w500';
     this.defaultImg =
-    'https://www.jakartaplayers.org/uploads/1/2/5/5/12551960/2297419_orig.jpg';
+    'https://m.media-amazon.com/images/M/MV5BMTRkZGE0YWYtMDFhOS00N2I4LTljMTMtYjk0MTI2YmVhOTU4XkEyXkFqcGdeQXVyNjgxNzM0NDI@._V1_.jpg';
 }
 
 async getPopularMovies(page) {

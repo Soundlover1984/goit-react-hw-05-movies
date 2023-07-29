@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { BtnElement } from './Button.styled';
-
+import { Spinner } from 'react-bootstrap';
+import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 export const Btn = ({
   text,
@@ -9,6 +10,7 @@ export const Btn = ({
   disabled = false,
   type = 'button',
   onClick = null,
+  onLoaderPlay,
 }) => {
   return (
     <BtnElement
@@ -18,6 +20,17 @@ export const Btn = ({
       onClick={onClick}
     >
       {Icon && <Icon></Icon>}
+
+      {onLoaderPlay && (
+        <Spinner
+          as="span"
+          variant="light"
+          size="sm"
+          role="status"
+          aria-hidden="true"
+          animation="border"
+        />
+      )}
       {text}
     </BtnElement>
   );

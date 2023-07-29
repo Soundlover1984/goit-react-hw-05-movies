@@ -12,7 +12,7 @@ import {
   NoCastText,
 } from './Cast.styled';
 
-export const Cast = () => {
+const Cast = () => {
   const { id } = useParams();
   const [castList, setCastList] = useState(null);
 
@@ -56,3 +56,5 @@ export const Cast = () => {
     </CastConteiner>
   );
 };
+
+export default Cast;

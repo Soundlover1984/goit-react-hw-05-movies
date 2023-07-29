@@ -11,7 +11,7 @@ import {
   NoReviewsText,
 } from './Review.styled';
 
-export const Review = () => {
+const Review = () => {
   const { id } = useParams();
   const [reviews, setReviews] = useState(null);
 
@@ -44,3 +44,5 @@ export const Review = () => {
     </div>
   );
 };
+
+export default Review;

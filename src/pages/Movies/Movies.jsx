@@ -8,7 +8,7 @@ import { MovieMain } from './Movies.styled';
 
 
 
-export const Movies = () => {
+const Movies = () => {
 
 const [movies, setMovies] = useState([]);
 
@@ -57,3 +57,5 @@ const formSubmit = inputQuery => {
     </MovieMain>
   );
 };
+
+export default Movies;

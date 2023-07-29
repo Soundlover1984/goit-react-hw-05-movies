@@ -4,7 +4,7 @@ import { Title, Main } from './Home.styled';
 import { MovieList } from '../../components/MovieList/MovieList';
 import { Btn } from '../../components/Button/Button';
 
-export const Home = () => {
+const Home = () => {
     const [movies, setMovies] = useState([]);
 
     const [page, setPage] = useState(1);
@@ -34,3 +34,4 @@ export const Home = () => {
   );
 };
   
+export default Home;
