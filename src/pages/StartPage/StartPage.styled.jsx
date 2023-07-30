@@ -30,13 +30,13 @@ export const Link = styled(NavLink)`
   &:hover,
   &:focus {
     transform: scale(1.1);
-    border: 1px solid rgba(0, 128, 75, 0.7);
+    border: 1px solid rgba(127, 187, 9, 0.7);
     box-shadow: 0px 12px 8px 4px #0b78474d;
   }
 
   &.active {
     color: white;
-    background-color: rgba(0, 128, 75, 0.7);
+    background-color: rgba(127, 187, 9, 0.7);
 
     &:hover,
     &:focus {

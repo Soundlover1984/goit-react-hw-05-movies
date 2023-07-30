@@ -16,7 +16,7 @@ export const MovieListItem = styled.li`
   border-radius: 12px;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
   }
 
   &:hover > p {
@@ -26,7 +26,7 @@ export const MovieListItem = styled.li`
   img {
     border-radius: 12px;
     height: 100%;
-    width: 100%;
+    width: 500px;
   }
 `;
 
@@ -52,7 +52,6 @@ export const MovieName = styled.p`
     position: absolute;
     bottom: 0;
     right: 0;
-    /* transform: translateY(-50%); */
     width: 50px;
     background-color: rgba(228, 222, 30, 0.8);
     padding: 10px;

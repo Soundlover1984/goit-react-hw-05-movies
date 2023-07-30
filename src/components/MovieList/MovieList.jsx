@@ -2,15 +2,17 @@ import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { fetchMovieApi } from 'movieApiService';
 import { MovieListStyled, MovieListItem, MovieName } from './MovieList.styled';
+import { nanoid } from 'nanoid';
 
 export const MovieList = ({ movies }) => {
   const location = useLocation();
+  const movieId = nanoid()
   return (
     <MovieListStyled>
       {movies.map(movie => {
         // console.log(movie);
         return (
-          <MovieListItem key={movie.id}>
+          <MovieListItem key={movieId}>
             <MovieName>
               {movie.title} <span>{movie.vote_average.toFixed(2)}</span>
             </MovieName>

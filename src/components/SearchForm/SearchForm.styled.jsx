@@ -15,7 +15,7 @@ export const Input = styled.input`
   border-radius: 12px;
   border: 1px solid black;
   width: 30vw;
-  border: 1px solid rgba(0, 128, 75, 0.7);
+  border: 1px solid rgba(127, 187, 9, 0.7);
   box-shadow: 0px 12px 8px 4px #cab1b14d;
 
   &:focus,

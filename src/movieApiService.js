@@ -11,6 +11,7 @@ constructor() {
     this.BASE_URL = 'https://image.tmdb.org/t/p/w500';
     this.defaultImg =
     'https://m.media-amazon.com/images/M/MV5BMTRkZGE0YWYtMDFhOS00N2I4LTljMTMtYjk0MTI2YmVhOTU4XkEyXkFqcGdeQXVyNjgxNzM0NDI@._V1_.jpg';
+    
 }
 
 async getPopularMovies(page) {

@@ -14,12 +14,12 @@ export const BtnElement = styled.button`
     props.status === 'search'
       ? 'none'
       : props.status === 'load'
-      ? '1px solid rgba(0, 128, 75, 0.7)'
+      ? '1px solid rgba(127, 187, 9, 0.7)'
       : 'grey'};
 
   background-color: ${props =>
     props.status === 'search'
-      ? 'rgba(0, 128, 75, 0.7)'
+      ? 'rgba(154, 205, 50, 1)'
       : props.status === 'load'
       ? 'transparent'
       : 'grey'};
@@ -37,7 +37,7 @@ export const BtnElement = styled.button`
   &:focus {
     transform: scale(1.1);
     color: white;
-    background-color: rgba(0, 128, 75, 0.7);
+    background-color: rgba(127, 187, 9, 0.7);
     border: none;
     box-shadow: 0px 12px 8px 4px #0b78474d;
   }

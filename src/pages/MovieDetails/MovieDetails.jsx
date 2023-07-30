@@ -49,7 +49,9 @@ const MovieDetails = () => {
       </GoBackLinkWrapper>
       <WrapperMovie>
         <MoviePic
-          src={`${fetchMovieApi.BASE_URL}${poster_path}`}
+          src={poster_path
+          ? `${fetchMovieApi.BASE_URL}${poster_path}`
+          : fetchMovieApi.defaultImg}
           alt={original_title}
           width="300"
         />
