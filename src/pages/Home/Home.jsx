@@ -6,9 +6,7 @@ import { Btn } from '../../components/Button/Button';
 
 const Home = () => {
     const [movies, setMovies] = useState([]);
-
     const [page, setPage] = useState(1);
-  
     const [total_results, setTotalResults] = useState(null);
 
     useEffect(() => {
