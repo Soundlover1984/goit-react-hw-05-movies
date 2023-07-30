@@ -15,4 +15,5 @@ export const Title = styled.h1`
   text-transform: uppercase;
   letter-spacing: 1.7;
   margin-bottom: 20px;
+  font-style: italic;
 `;

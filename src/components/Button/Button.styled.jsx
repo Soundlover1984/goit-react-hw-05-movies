@@ -9,6 +9,7 @@ export const BtnElement = styled.button`
   font-size: 16px;
   font-weight: 500;
   box-shadow: 0px 12px 8px 4px #cab1b14d;
+  cursor: pointer;
 
   border: ${props =>
     props.status === 'search'
@@ -19,7 +20,7 @@ export const BtnElement = styled.button`
 
   background-color: ${props =>
     props.status === 'search'
-      ? 'rgba(154, 205, 50, 1)'
+      ? 'rgba(127, 187, 9, 0.7)'
       : props.status === 'load'
       ? 'transparent'
       : 'grey'};
@@ -37,7 +38,7 @@ export const BtnElement = styled.button`
   &:focus {
     transform: scale(1.1);
     color: white;
-    background-color: rgba(127, 187, 9, 0.7);
+    background-color: rgba(154, 205, 50, 1);
     border: none;
     box-shadow: 0px 12px 8px 4px #0b78474d;
   }

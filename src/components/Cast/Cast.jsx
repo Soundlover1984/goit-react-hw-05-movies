@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { ImSad } from 'react-icons/im';
 import { fetchMovieApi } from 'movieApiService';
+import { nanoid } from 'nanoid';
 import {
   CastList,
   CastConteiner,
@@ -15,6 +16,7 @@ import {
 const Cast = () => {
   const { id } = useParams();
   const [castList, setCastList] = useState(null);
+  const castId = nanoid();
 
   useEffect(() => {
     fetchMovieApi.getMovieCast(id).then(setCastList);
@@ -29,7 +31,7 @@ const Cast = () => {
       {castList.length !== 0 ? (
         <CastList>
           {castList.map(el => (
-            <CastItem key={el.id}>
+            <CastItem key={castId}>
               <ActorImgWrapper>
                 <ActorImg
                   src={

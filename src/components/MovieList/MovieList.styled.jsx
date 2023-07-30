@@ -26,7 +26,7 @@ export const MovieListItem = styled.li`
   img {
     border-radius: 12px;
     height: 100%;
-    width: 500px;
+    width: 300px;
   }
 `;
 

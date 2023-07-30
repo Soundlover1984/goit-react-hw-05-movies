@@ -11,13 +11,9 @@ import { MovieMain } from './Movies.styled';
 const Movies = () => {
 
 const [movies, setMovies] = useState([]);
-
 const [page, setPage] = useState(1);
-
 const [total_results, setTotalResults] = useState(null);
-
 const [searchParams, setSearchParams] = useSearchParams();
-
 const query = searchParams.get('query') ?? '';
 
 

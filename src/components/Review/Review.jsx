@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { ImSad } from 'react-icons/im';
+import { nanoid } from 'nanoid';
 
 import { fetchMovieApi } from 'movieApiService';
 import {
@@ -14,6 +15,7 @@ import {
 const Review = () => {
   const { id } = useParams();
   const [reviews, setReviews] = useState(null);
+  const reviewId = nanoid();
 
   // console.log(reviews);
   useEffect(() => {
@@ -29,7 +31,7 @@ const Review = () => {
       {reviews.length !== 0 ? (
         <ReviewsList>
           {reviews.map(el => (
-            <ReviewItem key={el.id}>
+            <ReviewItem key={reviewId}>
               <Author>Author: {el.author} </Author>
               <Content>{el.content}</Content>
             </ReviewItem>

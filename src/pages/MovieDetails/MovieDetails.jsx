@@ -2,6 +2,7 @@ import { useState, useEffect, Suspense } from 'react';
 import { Outlet, useParams, useLocation } from 'react-router-dom';
 import { Loader } from '../../components/Loader/Loader';
 import { fetchMovieApi } from 'movieApiService';
+import { nanoid } from 'nanoid';
 import {
   GoBackLinkWrapper,
   WrapperMovie,
@@ -18,6 +19,7 @@ import { Link } from '../StartPage/StartPage.styled';
 
 const MovieDetails = () => {
   const { id } = useParams();
+  const indexId = nanoid();
 
   const [movieId, setMovieId] = useState(null);
   const location = useLocation();
@@ -67,8 +69,8 @@ const MovieDetails = () => {
           <OverviewContent>{overview}</OverviewContent>
           <SubTitle>Genres</SubTitle>
           <Genres>
-            {genres.map((genre, index) => (
-              <li key={index} style={{ marginRight: '10px' }}>
+            {genres.map((genre) => (
+              <li key={indexId} style={{ marginRight: '10px' }}>
                 {genre.name}
               </li>
             ))}
