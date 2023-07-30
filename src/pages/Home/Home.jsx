@@ -26,7 +26,7 @@ const Home = () => {
       <Title>Trending today </Title>
       <MovieList movies={movies} />
       {total_results / 20 >= page && (
-        <Btn text="Load more" status="load" onClick={loadMore} />
+        <Btn text="Load more" status="search" onClick={loadMore} />
       )}
     </Main>
   );

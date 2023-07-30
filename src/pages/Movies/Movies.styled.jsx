@@ -7,3 +7,4 @@ export const MovieMain = styled.main`
   flex-direction: column;
   flex-wrap: wrap;
 `;
+
