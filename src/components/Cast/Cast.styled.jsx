@@ -32,7 +32,7 @@ export const CastItem = styled.li`
 export const ActorImg = styled.img`
   border-radius: 10%;
   width: 100px;
-  height: 100px;
+  height: 120px;
 `;
 
 export const ActorImgWrapper = styled.div`
